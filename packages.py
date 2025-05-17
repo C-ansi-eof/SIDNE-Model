@@ -62,7 +62,7 @@ def LCOE(tech, data, name_file):
           rate=data.loc[tech].rate,
           nper=[i+1 for i in range(int(data.loc[tech].lifetime))],
           pmt=0,
-          fv=[data.loc[tech].carbon_cost*data.loc[tech].carbon_intensity*1e-3*gen #gCO2/kWh = t/MWh * 1e-3
+          fv=[data.loc[tech].carbon_cost*data.loc[tech].carbon_intensity*gen # already done (gCO2/kWh = t/MWh * 1e-3)
               for i in range(int(data.loc[tech].lifetime))])
 
     res["tax"]=(-1)*npf.pv(
