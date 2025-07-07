@@ -1,4 +1,6 @@
-# NuclearEnergy_Industrial_decarbonization-PyPSA-
+# SIDNE model
+(Spain Industry Decarbonization with Nuclear Energy)
+
 Exploring the use of Small Modular Reactors for decarbonizing industries in Spain. 
 The code is in de jupyter notebook called SMR_multilink.ipynb. 
 
